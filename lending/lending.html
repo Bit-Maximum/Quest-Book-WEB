@@ -25,13 +25,13 @@
     <header class="header" id="header">
         <div class="container__nav">
             <div class="header_inner">
-                <div class="header_logo"><a href="">BookVentures</a></div>
+                <div class="header_logo"><a href="#" data-scroll="#team">BookVentures</a></div>
 
                 <nav class="nav" id="nav">
-                    <a class="nav_link" href="#" data-scroll="#about">Как играть</a>
-                    <a class="nav_link" href="#" data-scroll="#chapters">Содержание</a>
+                    <a class="nav_link" href="#" data-scroll="#print__version">Об издании</a>
+                    <a class="nav_link" href="#" data-scroll="#demo">Как играть</a>
                     <a class="nav_link" href="#" data-scroll="#features">Особенности</a>
-                    <a class="nav_link" href="#" data-scroll="#creation">Команда</a>
+                    <a class="nav_link" href="#" data-scroll="#team">Команда</a>
                 </nav>
 
                 <button class="nav-toggle" id="nav_toggle">
@@ -54,8 +54,8 @@
                     <div class="layer layers__front" style="background-image: url(assets/images/paralax/layer-front.png);"></div>
                 </div>
             </header> <!--header-->
-s
-            <article class="main-article" style="background-image: url(assets/images/paralax/dungeon.jpg);">
+
+            <article class="main-article" id="print__version" style="background-image: url(assets/images/paralax/dungeon.jpg);">
                 <div class="container">
                     <div class="main-article__slider">
                         <div class="slider">
@@ -74,7 +74,7 @@ s
                 </div>
             </article> <!--main-article-->
 
-            <section class="demo" style="background-image: url(assets/images/demo/screen.jpg)">
+            <section class="demo" id="demo" style="background-image: url(assets/images/demo/screen.jpg)">
                 <div class="container">
                     <div class="main-article__text demo__text">
                         <div class="demo__text-block">
@@ -133,41 +133,51 @@ s
                 <div class="features__image__after"></div>
             </section> <!-- features__image -->
 
-            <section class="team">
+            <section class="team" id="team">
                 <div class="team_header">
                     <h3 class="section_suptitle">Команда</h3>
                     <h2 class="section_title">BookVentures</h2>
                 </div>
                 <div class="container">
-                    <div class="team_box box_maxim">
-                        <a href="https://vk.com/bit_maximum" target="_blank">
-                            <div class="team_box__title">
-                                <h3 class="name">Максим Меркурьев</h3>
-                                <h3 class="post">Веб-дизайнер</h3>
-                                <div class="line"></div>
+                    <div class="box_wrapper">
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="team_box box_maxim">
+                                    <a href="https://vk.com/bit_maximum" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Максим Меркурьев</h3>
+                                            <h3 class="post">Веб-дизайнер</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="team_box__line"></div>
-                        </a>
-                    </div>
-                    <div class="team_box box_anton">
-                        <a href="https://vk.com/aaashaaapovaaal02" target="_blank">
-                            <div class="team_box__title">
-                                <h3 class="name">Антон Шаповал</h3>
-                                <h3 class="post">Типограф</h3>
-                                <div class="line"></div>
+                            <div class="box">
+                                <div class="team_box box_anton">
+                                    <a href="https://vk.com/aaashaaapovaaal02" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Антон Шаповал</h3>
+                                            <h3 class="post">Типограф</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="team_box__line"></div>
-                        </a>
-                    </div>
-                    <div class="team_box box_cat">
-                        <a href="https://vk.com/severrrrrrrrrrrrrrr" target="_blank">
-                            <div class="team_box__title">
-                                <h3 class="name">Тимон</h3>
-                                <h3 class="post">Кот</h3>
-                                <div class="line"></div>
+                            <div class="box">
+                                <div class="team_box box_cat">
+                                    <a href="https://vk.com/severrrrrrrrrrrrrrr" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Тимон</h3>
+                                            <h3 class="post">Кот</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="team_box__line"></div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section> <!-- team -->
