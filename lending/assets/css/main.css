@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-article::after {
     content: "";
     position: absolute;
-    top: 99vh;
+    top: 99%;
     z-index: 5;
     width: 100%;
     min-height: 150px;
@@ -252,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .main-article__text {
     transform: translate3d(0, calc(var(--scrollTop) / -15), 0);
@@ -399,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: top center;
 }
 .demo::after {
-    top: 98vh;
+    top: 98%;
 }
 .screen {
     width: 300px;
@@ -843,6 +844,15 @@ h1, h2, h3, h4, h5, h6 {
         /*letter-spacing: calc(var(--index) / 3.5);*/
     }
 
+    /* Demo */
+    .main-article__header {
+        font-size: calc(var(--index) * 1.7);
+    }
+    .main-article__paragraph {
+        font-size: calc(var(--index) * 0.8);
+        max-width: calc(var(--index) * 22);
+    }
+
     /* Team */
 
     /*  Features  */
@@ -877,6 +887,23 @@ h1, h2, h3, h4, h5, h6 {
     .layers__caption {
         font-size: calc(var(--index) * 1.6);
         /*letter-spacing: calc(var(--index) / 3.5);*/
+    }
+
+    /* Demo */
+    .main-article__text {
+        margin-top: 22vh;
+    }
+    .main-article__header {
+        font-size: calc(var(--index) * 1.9);
+    }
+    .main-article__paragraph {
+        font-size: calc(var(--index) * 0.9);
+    }
+    .read_form {
+        margin-bottom: 5vh;
+    }
+    .screen__wrapper {
+        margin-bottom: 5vh;
     }
 
     /* Team */
@@ -925,11 +952,25 @@ h1, h2, h3, h4, h5, h6 {
         /*letter-spacing: calc(var(--index) / 3.5);*/
     }
 
+    /* Demo */
+    .main-article__text {
+        margin-top: 25vh;
+    }
+    .main-article__header {
+        font-size: calc(var(--index) * 2.5);
+    }
+    .main-article__paragraph {
+        font-size: calc(var(--index) * 1.4);
+        max-width: calc(var(--index) * 30);
+    }
+    .screen__wrapper {
+        margin-bottom: 15vh;
+    }
+
     /*  Team  */
     .team_header {
         padding: 25px 0 15px;
     }
-    /* Team */
     .section_title {
         font-size: calc(var(--index) * 3.3);
     }
