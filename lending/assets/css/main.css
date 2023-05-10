@@ -786,24 +786,41 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     position: relative;
 }
+.footer-wrapper {
+    padding-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.read_form__footer {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
 .footer_btm {
     display: inline-block;
-    width: 220px;
-    height: 90px;
+    width: 300px;
+    height: 50px;
     border: 2px solid #000;
     background: #000;
     border-radius: 25px/23px;
     transition: background-color .2s linear;
 
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    position: relative;
 
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.55;
     color: #fff;
+}
+.footer_btm__pdf {
+    margin-bottom: 15px;
+}
+.footer_btm__epub {
+
 }
 .footer_btm:hover{
     background-color: #292929;
@@ -964,6 +981,18 @@ h1, h2, h3, h4, h5, h6 {
     .item_text {
         font-size: calc(var(--index) * 1.3);
     }
+
+    /*  Footer  */
+    .footer-wrapper {
+        padding-top: 30%;
+    }
+    .read_form__footer {
+        margin-bottom: 10px;
+    }
+    .footer:before {
+        height: 200px;
+        top: -51px;
+    }
 }
 
 
@@ -1041,6 +1070,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     .item_text {
         font-size: calc(var(--index) * 1.7);
+    }
+
+    /*  Footer  */
+    .footer-wrapper {
+        padding-top: 40%;
+    }
+    .read_form__footer {
+        margin-bottom: 10px;
     }
 }
 
