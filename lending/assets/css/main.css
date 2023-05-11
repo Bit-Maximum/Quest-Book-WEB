@@ -849,9 +849,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media requests */
 
-@media (max-width: 1230px) {
+@media (max-width: 1280px) {
     .nav{
         display: block;
+    }
+
+    /*  Slider  */
+    .slider__item {
+        width: 250px;
+        height: 450px;
+    }
+    .slick-arrow.slick-prev{
+        left: -30px;
+    }
+    .slick-arrow.slick-next{
+        right: -30px;
     }
 }
 
