@@ -545,6 +545,9 @@ h1, h2, h3, h4, h5, h6 {
 .screen-content__wrapper button:hover{
     background-color: #000;
 }
+.demo_btm {
+    width: 250px;
+}
 .demo_btm i {
     margin-left: 10px;
 }
@@ -801,7 +804,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer_btm {
     display: inline-block;
-    width: 300px;
+    width: 330px;
     height: 50px;
     border: 2px solid #000;
     background: #000;
@@ -846,7 +849,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media requests */
 
-@media (max-width: 1230px) {}
+@media (max-width: 1230px) {
+    .nav{
+        display: block;
+    }
+}
 
 
 @media (max-width: 990px) {
@@ -889,15 +896,41 @@ h1, h2, h3, h4, h5, h6 {
         font-size: calc(var(--index) * 1.1);
         max-width: 90%;
     }
+
+    /*  Footer  */
+    .footer:before {
+        top: -3px;
+    }
 }
 
 
 @media (max-width: 770px) {
 
     /* Nav */
-    .nav {
+    .nav{
         display: none;
+        position: absolute;
+        top:100%;
+        left:0;
+        /*display: block;*/
+        width: 100%;
+        background: #000;
     }
+    .nav.active{
+        display: block;
+    }
+    .nav_link{
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .nav-toggle{
+         display: block;
+         background: transparent;
+         font-size: 0;
+         border: none;
+     }
 
     /* Intro */
     .layers__title {
@@ -950,6 +983,12 @@ h1, h2, h3, h4, h5, h6 {
     .read_form__main {
         margin-bottom: 15vh;
     }
+    .demo_btm {
+        width: 220px;
+    }
+    .demo_btm i {
+        display: none;
+    }
 
     /* Team */
     .section_title {
@@ -991,12 +1030,27 @@ h1, h2, h3, h4, h5, h6 {
     }
     .footer:before {
         height: 200px;
-        top: -51px;
+        top: -11px;
     }
 }
 
 
 @media (max-width: 575px) {
+
+    /* Nav */
+    .nav{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+    }
+
+    .header_logo{
+        font-size: 26px;
+    }
+    .nav.active{
+        display: block;
+    }
 
     /* Intro */
     .layers__title {
@@ -1054,7 +1108,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /*  Features  */
     .features_inner .section_header{
-        font-size: calc(var(--index) * 3.3);
+        font-size: calc(var(--index) * 3.0);
         padding-top: 10vh;
     }
     .item {
@@ -1066,10 +1120,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 45px;
     }
     .item_header {
-        font-size: calc(var(--index) * 2.2);
+        font-size: calc(var(--index) * 2.0);
     }
     .item_text {
-        font-size: calc(var(--index) * 1.7);
+        font-size: calc(var(--index) * 1.4);
     }
 
     /*  Footer  */
