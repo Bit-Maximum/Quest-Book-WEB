@@ -1001,6 +1001,9 @@ h1, h2, h3, h4, h5, h6 {
     .demo_btm i {
         display: none;
     }
+    .demo::after {
+        top: 98.5%;
+    }
 
     /* Team */
     .section_title {
@@ -1031,6 +1034,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .item_text {
         font-size: calc(var(--index) * 1.3);
+    }
+    .features::before {
+        top: -147px;
     }
 
     /*  Footer  */
@@ -1088,6 +1094,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .screen__wrapper {
         margin-bottom: 15vh;
+    }
+    .demo::after {
+        top: 99%;
     }
 
     /* Main */
