@@ -306,8 +306,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 .slider__item{
-    width: 300px;
-    height: 540px;
+    width: 250px;
+    height: 450px;
     margin: 0 30px;
     position: relative;
     display: inline-block;
@@ -370,12 +370,12 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 .slick-arrow.slick-prev{
-    left: -40px;
+    left: -30px;
     background: url(../images/slider/leftarrow.svg) 0 0 / 100% no-repeat;
 }
 .slick-arrow.slick-next{
     background: url(../images/slider/rightnarrow.svg)  0 0 / 100% no-repeat;
-    right: -40px;
+    right: -30px;
 }
 
 /* Demo */
@@ -852,18 +852,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1280px) {
     .nav{
         display: block;
-    }
-
-    /*  Slider  */
-    .slider__item {
-        width: 250px;
-        height: 450px;
-    }
-    .slick-arrow.slick-prev{
-        left: -30px;
-    }
-    .slick-arrow.slick-next{
-        right: -30px;
     }
 }
 
