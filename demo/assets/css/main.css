@@ -260,11 +260,15 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 .main-article__text {
+    padding: 0 10px 2px;
+    background: rgba(1, 1, 1, .8);
+    border-radius: 1rem;
     transform: translate3d(0, calc(var(--scrollTop) / -15), 0);
     will-change: transform;
     transition: var(--transition);
 }
 .main-article__header {
+    text-align: center;
     font-size: calc(var(--index) * 1.5);
     /*letter-spacing: calc(var(--index) / 2.25);*/
     opacity: 1;
@@ -312,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 .slider__item{
-    width: 250px;
+    width: 255px;
     height: 450px;
     margin: 0 30px;
     position: relative;
@@ -321,17 +325,22 @@ h1, h2, h3, h4, h5, h6 {
     opacity: .9;
 }
 .slider__item--first{
-    background: url("../images/slider/1.png")
+    background: url("../images/slider/axe.png")
     center no-repeat;
     background-size: cover;
 }
 .slider__item--second{
-    background: url("../images/slider/2.png")
+    background: url("../images/slider/mask.png")
     center no-repeat;
     background-size: cover;
 }
 .slider__item--third{
-    background: url("../images/slider/3.png")
+    background: url("../images/slider/humer.png")
+    center no-repeat;
+    background-size: cover;
+}
+.slider__item--forth{
+    background: url("../images/slider/roup.png")
     center no-repeat;
     background-size: cover;
 }
@@ -411,33 +420,50 @@ h1, h2, h3, h4, h5, h6 {
 .matrix::after {
     top: 98%;
 }
-.flex--box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-.flex--box .matrix__text-block:last-child {
-    margin-left: 15px;
-}
 .demo_btm {
     width: 250px;
 }
 .demo_btm i {
     margin-left: 10px;
 }
-.matrix__text-block {
+.matrix__bottom-text__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+.matrix-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text-block {
     padding: 0 10px 2px;
     background: rgba(1, 1, 1, .8);
     border-radius: 1rem;
+}
+.table__wrapper {
+    margin: 25px;
+}
+.text-block__top {
+    margin-top: 20vh;
+}
+.text-block__bottom {
+    margin-bottom: 5vh;
+}
+.text-block__left {
+    margin-right: 15px;
+}
+.text-block__right {
+    margin-left: 15px;
+}
+.instruction p:last-child {
+    text-align: right;
 }
 .demo__text {
     margin-top: 15vh;
 }
 
-/* Features */
+/* Keys */
 
 .container__keys {
     width: 100%;
@@ -476,27 +502,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 .item {
     width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
     position: relative;
 }
-.item_icon {
-    position: absolute;
-    top: 1%;
-    left: 0;
-    z-index: 1;
-    width: 65px;
-    height: 65px;
+.item__wrapper {
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.item_header {
-    font-weight: 700;
-    line-height: 1.3;
-    font-size: calc(var(--index) * 1.1);
+#key-1 {
+    margin-right: 30%;
+    transform: rotate(353deg);
 }
-.item_text{
-    font-weight: 400;
-    font-size: calc(var(--index) * 0.7);
-    max-width: calc(var(--index) * 20);
+#key-2 {
+    margin-left: 20%;
+    transform: rotate(4deg);
+}
+#key-3 {
+    margin-left: 20%;
+    transform: rotate(4deg);
+}
+#key-4 {
+    margin-left: 3%;
+    transform: rotate(1deg);
+}
+#key-5 {
+    margin-right: 10%;
+    transform: rotate(358deg);
+}
+#key-6 {
+    margin-right: 30%;
+    transform: rotate(2deg);
+}
+#key-7 {
+    margin-left: 30%;
+    transform: rotate(351deg);
+}
+#key-example {
+    margin-right: 20%;
+    transform: rotate(357deg);
+}
+
+.keys__text-block {
+    padding: 12px 35px;
+    border-radius: .5rem;
+}
+.item_text {
+    font-size: calc(var(--index) * 1.3);
 }
 .features__image {
     background-color: #fff;
@@ -883,9 +933,6 @@ h1, h2, h3, h4, h5, h6 {
     .read_form {
         margin-bottom: 5vh;
     }
-    .table__wrapper {
-        margin-bottom: 5vh;
-    }
     .read_form__main {
         margin-bottom: 15vh;
     }
@@ -985,9 +1032,6 @@ h1, h2, h3, h4, h5, h6 {
     .main-article__paragraph {
         font-size: calc(var(--index) * 1.4);
         max-width: calc(var(--index) * 30);
-    }
-    .table__wrapper {
-        margin-bottom: 15vh;
     }
     .matrix::after {
         top: 99%;
