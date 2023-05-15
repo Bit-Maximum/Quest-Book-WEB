@@ -36,6 +36,28 @@ h1, h2, h3, h4, h5, h6 {
     will-change: transform;
 }
 
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+}
+.modal__main {
+    position: relative;
+    max-width: calc(var(--index) * 20);
+}
+.modal__title {
+    font-size: calc(var(--index) * 1.5);
+    font-weight: 700;
+}
+.modal__container {
+    font-weight: 400;
+    font-size: calc(var(--index) * 0.7);
+}
+
 /* Header*/
 
 .container__nav{
