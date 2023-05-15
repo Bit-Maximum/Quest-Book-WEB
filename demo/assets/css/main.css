@@ -44,10 +44,26 @@ h1, h2, h3, h4, h5, h6 {
     inset: 0;
     background-color: rgba(0,0,0,.5);
     z-index: 10;
+    display: none;
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+}
+.modal1 {
+    margin-top: 10vh;
+}
+.modal2 {
+    margin-top: 110vh;
 }
 .modal__main {
     position: relative;
     max-width: calc(var(--index) * 20);
+    background-color: white;
+    margin: auto;
+    color: #000;
+    border-radius: 16px;
+    padding: 30px;
+    cursor: default;
 }
 .modal__title {
     font-size: calc(var(--index) * 1.5);
@@ -56,6 +72,53 @@ h1, h2, h3, h4, h5, h6 {
 .modal__container {
     font-weight: 400;
     font-size: calc(var(--index) * 0.7);
+}
+.modal__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: calc(var(--index) * 1.4);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.modal__close:focus-visible {
+    outline-color: green;
+}
+.modal_btn {
+    z-index: 9;
+    display: inline-block;
+    width: 200px;
+    height: 46px;
+    border: 2px solid #000;
+    background: #000;
+    border-radius: 25px/23px;
+    transition: background-color .2s linear;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: #fff;
+}
+.header_btn {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate3d(0, calc(var(--scrollTop) / 4.7), 0);
+}
+.modal_btm:hover{
+    background-color: #292929;
 }
 
 /* Header*/
