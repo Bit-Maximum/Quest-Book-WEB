@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/dd2b9eb772.js" crossorigin="anonymous"></script>
     <script src="assets/libs/gsap/gsap.min.js" defer></script>
@@ -21,6 +21,7 @@
     <script src="assets/js/slick.min.js" defer></script>
     <script src="assets/js/slider.js" defer></script>
     <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/wheel.js" defer></script>
 </head>
 <body>
 <header class="header" id="header">
@@ -187,43 +188,36 @@
 
         <section class="massage" id="massage" style="background-image: url(assets/images/matrix/screen.jpg)">
             <div class="container">
-                <div class="main-article__text demo__text">
+                <div class="massage__text-wrapper">
                     <div class="text-block">
                         <h2 class="main-article__header">Скрытое послание</h2>
-                        <p class="main-article__paragraph">Исследуя последний комплекс Храма Затерянных Тайн вы обнаруживаете огромную расписанную на одной из стен карту. Вы копируете её и досканально изучаете её в лагере. <br>Однако легенда карты зашифрована. И вы не можете понять, как ей пользоваться. Вы решаете раскрыть шифр и ещё раз читаете легенду:</p>
+                        <p class="main-article__paragraph">Вы вернулись в лагерь с необычным артефактом, похожим на символ Майя. Он состоит из трёх поворотных механизмов, которые надо сопоставить, чтобы получился определённый порядок слов, похожий на тайный шифр племени Майя. <br><br>Вы сопоставляете механизмы и получаете такой порядок символов:</p>
                     </div>
-                    <div class="text-block massage__text-block">
-                        <h2 class="main-article__header">Тайное знание</h2>
-                        <p class="main-article__paragraph"><span class="green">Ч</span>юа<span class="red">ш</span> Забытых <span class="green">Ф</span>он<span class="red">н</span></p>
+                </div>
+                <div class="massage__text-wrapper">
+                    <div class="massage__text-block">
+                        <h2 class="main-article__header massage__header">Тайное знание</h2>
+                        <p class="main-article__paragraph massage__paragraph"><span class="green">Ч</span>юа<span class="red">ш</span> Забытых <span class="green">Ф</span>он<span class="red">н</span></p>
                     </div>
                 </div>
             </div>
-        </section> <!-- team -->
 
-        <section class="keys disk" id="disk">
+        </section> <!-- massage -->
+
+        <section class="keys disk" id="wheel">
             <div class="container__keys">
                 <div class="features_inner">
-                    <h2 class="section_header">Ключи шифров</h2>
+                    <h2 class="section_header">Шифровальный диск</h2>
 
                     <form action="" class="read_form read_form__disk">
                         <button class="read_btm popup__disk">Что делать?</button>
                     </form>
-
-                    <div class="box wheels">
-                        <div class="team_box box_cat">
-                            <a href="https://vk.com/severrrrrrrrrrrrrrr" target="_blank">
-                                <div class="team_box__title">
-                                    <h3 class="name">Тимон</h3>
-                                    <h3 class="post">Кот</h3>
-                                    <div class="line"></div>
-                                </div>
-                                <div class="team_box__line"></div>
-                            </a>
-                        </div>
+                    <div class="wheel__wrapper">
+                        <div class="wheel"></div>
                     </div>
                 </div>
             </div>
-        </section> <!-- features -->
+        </section> <!-- disk -->
 
         <section class="footer" style="background-image: url(assets/images/footer/footer.jpg)">
             <!--<div class="container">-->
