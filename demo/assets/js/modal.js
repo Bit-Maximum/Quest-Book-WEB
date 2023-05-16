@@ -47,3 +47,9 @@ modalControler({
     btnOpen: '.modal_btn2',
     btnClose: '.modal__close'
 });
+
+modalControler({
+    modal: '.modal3',
+    btnOpen: '.modal_btn3',
+    btnClose: '.modal__close'
+});
