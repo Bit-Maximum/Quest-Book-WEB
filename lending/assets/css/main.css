@@ -752,10 +752,10 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../images/team/anton2.jpg");
 }
 .box_cat {
-    background-image: url("../images/team/cat1.jpg");
+    background-image: url("../images/team/sever1.jpg");
 }
 .box_cat:hover {
-    background-image: url("../images/team/cat2.jpg");
+    background-image: url("../images/team/sever2.jpg");
 }
 .team_header {
     margin: 0 auto;
