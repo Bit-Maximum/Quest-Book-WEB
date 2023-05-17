@@ -49,10 +49,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px;
     overflow-y: auto;
 }
-.modal1 {
+.modal1 .modal__main {
     margin-top: 10vh;
 }
-.modal2 {
+.modal2 .modal__main {
     margin-top: 120vh;
 }
 .modal3 .modal__main {
@@ -264,13 +264,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-header::after {
     content: "";
     position: absolute;
+    top: 99%;
     z-index: 5;
     width: 100%;
-    height: calc(var(--index) * 10);
-    background-image: url(../images/paralax/ground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 150px;
+    background-image: url(../images/paralax/stal.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top center;
+    overflow: hidden;
     bottom: calc(var(--index) * -4.5);
 }
 .layers {
@@ -332,8 +334,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-top: -30px;
 }
-.main-article::after,
-.features__image::after {
+.main-article::after {
     content: "";
     position: absolute;
     top: 99%;
@@ -345,6 +346,19 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: repeat-x;
     background-position: top center;
     overflow: hidden;
+}
+.main-article::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    min-height: 150px;
+    background-image: url(../images/paralax/stalUp.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top center;
+    overflow: hidden;
+    top: -130px;
 }
 .container {
     position: relative;
@@ -420,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     display: inline-block;
     text-align: center;
-    opacity: .9;
+    opacity: .95;
 }
 .slider__item--first{
     background: url("../images/slider/axe.png")
@@ -493,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Matrix */
 
-.matrix, .massage {
+.matrix {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -515,8 +529,21 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: repeat-x;
     background-position: top center;
 }
+.matrix::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    min-height: 150px;
+    background-image: url(../images/paralax/stalUp.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top center;
+    overflow: hidden;
+    top: -150px;
+}
 .matrix::after {
-    top: 98%;
+    top: 99%;
 }
 .demo_btm {
     width: 250px;
@@ -678,6 +705,19 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     position: relative;
 }
+.features__image::after {
+    content: "";
+    position: absolute;
+    top: 99%;
+    z-index: 5;
+    width: 100%;
+    min-height: 150px;
+    background-image: url(../images/massage/intro_line_blackpng.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top center;
+    overflow: hidden;
+}
 .features__image__before {
     z-index: 2;
     content: "";
@@ -699,7 +739,32 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -5px;
 }
 
+
 /* Massage */
+
+.massage {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #e7e7e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.massage::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    min-height: 142px;
+    background-image: url(../images/massage/intro_line_down.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top center;
+    transform: rotateX(0deg);
+    top: -5px;
+}
 .massage__text-wrapper {
     display: flex;
     justify-content: center;
@@ -763,12 +828,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 5;
     width: 100%;
     min-height: 150px;
-    background-image: url(../images/features/intro_line.png);
-    background-size: contain;
-    background-repeat: repeat-x;
+    background-image: url(../images/wheel/intro_line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top center;
     transform: rotateX(0deg);
-    top: -11vh;
+    top: -140px;
 }
 .disk__item_wrapper {
     display: flex;
