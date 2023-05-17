@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: repeat-x;
     background-position: top center;
     overflow: hidden;
-    top: -130px;
+    top: -120px;
 }
 .container {
     position: relative;
@@ -372,6 +372,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 .main-article__text {
+    margin-top: 35vh;
+    margin-bottom: 35vh;
     padding: 0 10px 2px;
     background: rgba(1, 1, 1, .8);
     border-radius: 1rem;
@@ -417,6 +419,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Slider */
 
 .main-article__slider {
+    margin-top: 20vh;
+    margin-bottom: 23vh;
     max-width: 350px;
     background: radial-gradient(circle at 50% 65%, wheat 0, transparent 39%);
     background-size: cover;
@@ -570,7 +574,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 25px;
 }
 .text-block__top {
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .text-block__bottom {
     margin-bottom: 5vh;
@@ -770,13 +774,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
 }
+.massage__text-block--leading {
+    margin-top: 20vh;
+}
 .massage__text-block {
+    margin-top: 40px;
+    margin-bottom: 25vh;
     padding: 30px 100px 40px;
     background-image: url("../images/team/pergament.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    margin-top: 20px;
 }
 .massage__header {
     font-family: 'Pangolin', serif;
@@ -840,9 +848,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     justify-content: center;
 }
+.disk__wrapper {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
 .disk__header {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 50px;
     font-size: calc(var(--index) * 1.7);
 }
