@@ -296,10 +296,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 .layers__middle {
-    transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 2.1), 0);
 }
 .layers__front {
-    transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 4.7), 0);
 }
 .layer__header {
     padding-bottom: 20px;
