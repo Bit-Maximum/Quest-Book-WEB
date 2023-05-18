@@ -796,6 +796,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: calc(var(--index) * 1.7);
     color: #1A1818FF;
     margin-top: calc(var(--index) * 1.1);
+    text-align: center;
 }
 .green {
     color: #1d9438;
@@ -1012,7 +1013,7 @@ h1, h2, h3, h4, h5, h6 {
         /*letter-spacing: calc(var(--index) / 3.5);*/
     }
 
-    /* Demo */
+    /* Matrix */
     .main-article__header {
         font-size: calc(var(--index) * 1.7);
     }
@@ -1020,10 +1021,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: calc(var(--index) * 0.8);
         max-width: calc(var(--index) * 22);
     }
+    .text-block__top {
+        margin-top: 20vh;
+    }
+    .matrix__bottom-text__wrapper {
+        margin-bottom: 10vh;
+    }
 
-    /* Team */
-
-    /*  Features  */
+    /*  Keys  */
     .features_inner .section_header{
         font-size: calc(var(--index) * 2.3);
     }
@@ -1035,7 +1040,24 @@ h1, h2, h3, h4, h5, h6 {
     }
     .item_text {
         font-size: calc(var(--index) * 1.1);
-        max-width: 90%;
+    }
+    .features_inner .section_header {
+        padding-top: 13vh;
+    }
+
+
+    /* Massage */
+    .massage__text-block--leading {
+        margin-top: 10vh;
+    }
+    .massage__text-block {
+        margin-bottom: 22vh;
+    }
+    .massage__header {
+        font-size: calc(var(--index) * 1.9);
+    }
+    .massage__paragraph {
+        font-size: calc(var(--index) * 1.7);
     }
 
     /*  Footer  */
@@ -1085,13 +1107,19 @@ h1, h2, h3, h4, h5, h6 {
         font-size: calc(var(--index) * 1.6);
         /*letter-spacing: calc(var(--index) / 3.5);*/
     }
+    .header_btn {
+        left: 36%;
+    }
 
-    /* Main */
+        /* Main */
     .slider {
         margin-bottom: 8vh;
     }
+    .main-article__slider {
+        margin: 15vh 0 10vh;
+    }
     .container__slider {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
     .slider__item {
         width: 270px;
@@ -1110,7 +1138,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Demo */
     .main-article__text {
-        margin-top: 22vh;
+        margin: 25vh 25px 0;
     }
     .main-article__header {
         font-size: calc(var(--index) * 1.9);
@@ -1132,6 +1160,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     .matrix::after {
         top: 98.5%;
+    }
+
+
+    /* Matrix */
+
+    .table__wrapper img {
+        width: 520px;
     }
 
     /* Team */
