@@ -119,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 .modal_btn {
     z-index: 9;
     display: inline-block;
-    width: 200px;
-    height: 46px;
+    width: 240px;
+    height: 80px;
     border: 2px solid #000;
     background: #000;
     border-radius: 25px/23px;
@@ -131,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: .05em;
+    line-height: 1.4;
     color: #fff;
 }
 .modal_btn:hover {
