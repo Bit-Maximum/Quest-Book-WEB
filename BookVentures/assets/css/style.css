@@ -1256,8 +1256,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .read_btm{
-        width: 200px;
-        height: 40px;
+        width: 250px;
+        height: 50px;
     }
 
     .read_btm a{
@@ -1308,7 +1308,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .end_btm{
-        width: 200px;
+        width: 250px;
         height: 70px;
 
         top: 25%;
