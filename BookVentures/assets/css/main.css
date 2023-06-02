@@ -316,17 +316,17 @@ h1, h2, h3, h4, h5, h6 {
     opacity: .9;
 }
 .slider__item--first{
-    background: url("../images/slider/1.png")
+    background: url("../images/slider/1-1.png")
     center no-repeat;
     background-size: cover;
 }
 .slider__item--second{
-    background: url("../images/slider/2.png")
+    background: url("../images/slider/2-2.png")
     center no-repeat;
     background-size: cover;
 }
 .slider__item--third{
-    background: url("../images/slider/3.png")
+    background: url("../images/slider/3-3.png")
     center no-repeat;
     background-size: cover;
 }
