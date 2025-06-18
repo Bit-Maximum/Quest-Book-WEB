@@ -5,7 +5,7 @@
 
 > _This landing page was created by me in 2023 as a **visual and atmospheric companion** to the quest book *«Temple of Lost Secrets»*._
 
-![Превью](media/1.png)
+![Preview](translation/media/1.png)
 
 ## 🗺 About
 
@@ -38,7 +38,9 @@ The site will be available at: `http://localhost:8080`
 
 ## 📸 Gallery
 
+https://github.com/user-attachments/assets/c306cb01-706d-4dae-9cfe-bb02954138be
 
+https://github.com/user-attachments/assets/046e782a-d928-49cf-9d4a-82ea00682441
 
 ## 📱 Responsiveness
 
