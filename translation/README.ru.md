@@ -41,7 +41,9 @@
 
 ## 📸 Галерея
 
+https://github.com/user-attachments/assets/c306cb01-706d-4dae-9cfe-bb02954138be
 
+https://github.com/user-attachments/assets/c3b4a8df-1112-4ada-9ee3-640e4ae273c2
 
 ## 📱 Адаптивность
 
