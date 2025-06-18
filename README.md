@@ -21,7 +21,7 @@ You can run the project using Docker or locally:
 
 ### 🐳 Run with Docker
 
-If you have [Docker](https://www.docker.com/)installed, you can run the project in a container:
+If you have [Docker](https://www.docker.com/) installed, you can run the project in a container:
    ```bash
    docker run -d -p 8080:80 bitmaximum/quest-book-web:latest
    ```
